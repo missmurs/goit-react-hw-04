@@ -63,11 +63,13 @@ function App() {
       <SearchBar onSubmit={onSubmit} />
       {articles.length > 0 && <ImageGallery photos={articles} />}
       {loading && <Loader />}
+
       {error && <ErrorMessage />}
       <Toaster />
       {articles.length > 0 && !articles.loading && (
         <LoadMoreBtn handleLoadMore={handleLoadMore} />
       )}
+
       <ImageModal />
     </>
   );
