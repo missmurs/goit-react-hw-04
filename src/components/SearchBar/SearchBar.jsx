@@ -1,4 +1,6 @@
 import toast from "react-hot-toast";
+import css from "./SearchBar.module.css";
+import { IoSearch } from "react-icons/io5";
 export default function SearchBar({ onSubmit }) {
   const handleSumbit = (e) => {
     e.preventDefault();
@@ -11,14 +13,18 @@ export default function SearchBar({ onSubmit }) {
     e.target.reset();
   };
   return (
-    <header>
-      <form onSubmit={handleSumbit}>
+    <header className={css.header}>
+      <form onSubmit={handleSumbit} className={css["search-form"]}>
+        <button type="submit" className={css["search-form-btn"]}>
+          {" "}
+          <IoSearch type="submit" className={css["search-form-icon"]} />
+        </button>
         <input
           type="text"
           name="query"
           placeholder="Search images and photos"
+          className={css["search-form-text"]}
         />
-        <button type="submit">Search</button>
       </form>
     </header>
   );

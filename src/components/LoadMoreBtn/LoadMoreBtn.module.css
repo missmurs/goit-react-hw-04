@@ -1,0 +1,15 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(98, 163, 220);
+  border: none;
+  color: white;
+}

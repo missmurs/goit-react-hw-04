@@ -1,0 +1,31 @@
+.header {
+  background-color: rgb(98, 163, 220);
+  display: flex;
+  justify-content: space-around;
+}
+.search-form {
+  background-color: aliceblue;
+  display: inline-flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.search-form-text {
+  border: none;
+  width: 300px;
+  outline: none;
+  background-color: aliceblue;
+}
+.search-form-btn {
+  border: none;
+  background-color: aliceblue;
+}
+.search-form-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  color: rgb(84, 82, 82);
+}
