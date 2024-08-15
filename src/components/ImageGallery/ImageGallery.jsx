@@ -1,6 +1,7 @@
-import ImageCard from "./ImageCard";
+import ImageCard from "../ImageCard/ImageCard";
+
 import css from "./ImageGallery.module.css";
-export default function ImageGallery({ photos, onClick }) {
+export default function ImageGallery({ photos, openModal }) {
   return (
     <>
       <ul className={css["image-list"]}>
@@ -10,7 +11,7 @@ export default function ImageGallery({ photos, onClick }) {
               src={photo.urls.small}
               alt={photo.alt_description}
               largePhoto={photo.urls.regular}
-              onClick={onClick}
+              openModal={openModal}
             />
           </li>
         ))}

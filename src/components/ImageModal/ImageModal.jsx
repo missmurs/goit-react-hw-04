@@ -1,4 +1,5 @@
 import Modal from "react-modal";
+
 const customStyles = {
   content: {
     top: "50%",
@@ -10,16 +11,15 @@ const customStyles = {
   },
 };
 Modal.setAppElement("#root");
-
 export default function ImageModal({ modalIsOpen, closeModal, largePhoto }) {
   return (
     <div>
       <Modal
         isOpen={modalIsOpen}
-        onRequestClose={closeModal}
         style={customStyles}
+        onRequestClose={closeModal}
       >
-        <img src={largePhoto} alt="" />
+        <img src={largePhoto} alt="Modal content" />
       </Modal>
     </div>
   );
